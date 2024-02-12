@@ -1,0 +1,364 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    background-color: #0f0f0f;
+}
+#navdiv{
+    display:flex;
+    /* justify-content:space-evenly; */
+    align-items: center;
+    height:56px;
+    width: 100vw;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: fixed; 
+    top: 0px; 
+    background-color: #0f0f0f;
+    z-index: 2  ;
+
+}
+
+#menubutton{
+    border: none;
+    background-color: transparent;
+    height:40px;
+    width: 40px ;
+    border-radius: 50%;
+}
+#menubutton:hover{
+    background-color: #272728;
+}
+
+#yticonanchor{
+    display: flex;
+    width: 120px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+}
+
+#youtubeicon{
+    width:150px;
+    height: 35px;
+    margin-left:16px;
+    background-image: url("logo2.png");
+    background-size:contain ;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 4px;
+}
+#searchbar{
+    display: flex;
+    height:40px;
+    width: 42.5%;
+    padding-left: 0 4px 0 4px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 217px;
+}
+
+#bar{
+    height:40px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #404649;
+    border-right: 0;
+    border-top-left-radius:  40px;
+    border-bottom-left-radius: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+}
+
+
+#searchbutton{
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 68px;
+    height:42px;
+    background-color: #222222;
+    border: none;
+    border: 1px solid #2f3335;
+    border-left: 0px;
+    border-top-right-radius:  40px;
+    border-bottom-right-radius: 40px;
+
+    
+
+}
+
+#mic{
+    border:none;
+    background-color: #222222;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    margin-left: 16px;
+}
+
+#mic:hover{
+    border:none;
+    background-color: #272728;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+}
+#settings{
+    background-color: transparent;
+    border: none;
+    margin-left: 225px;
+}
+
+#signinbutton{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:96px;
+    height: 40px;
+    background-color: transparent;
+    color: rgb(67, 158, 245);
+    font-size: 0.85rem;
+    border: 1px solid #727f85;
+    border-radius: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+    
+    
+
+    
+}
+
+#signinbutton:hover{
+    background-color: rgb(67, 158, 245,0.2);
+
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width:64px;
+    top:56px;
+    height: 100vh;
+    position: fixed;
+    left: 0px; 
+    background-color: #0f0f0f;
+}
+
+.asideele{              
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:64px;
+    height: 74px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.6rem;
+    margin-left:6px;   
+    /* background-color: #727f85;
+    border-radius: 10px; */
+
+}
+
+.asideele:hover{
+    background-color: #272728;
+    border-radius: 10px; 
+}   
+
+#categories{
+    top:56px;
+    display: flex;
+    position:fixed;
+    height:56px;
+    width: 93vw;
+    
+    /* background-color: aqua; */
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 67px;
+    z-index: 2000;
+    background-color: #0f0f0f;
+
+ 
+   
+  
+}
+
+
+
+.catele{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width:40px; */
+    padding:0 12px 0 12px;
+    height: 32px;
+    background-color:#272728;
+    border-radius: 10px;font-size: 0.85rem;
+    font-weight: 600;
+    color: white; 
+    text-decoration: none;
+    
+    
+}
+
+.catele:hover{
+    
+    background-color: #222222;
+}
+
+.catele:focus{
+    
+    background-color: white;
+    color: black;
+}
+
+.videolist{
+    /* position: fixed;   */
+    display:grid;
+    width:90vw;
+    height:90vh;
+    grid-template-columns: 300px 300px 300px; 
+    /* background-color: blue;  */
+    margin-top:100px;
+    margin-left:78px;
+    padding-top: 24px;
+}
+
+.videos{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* background-color: aqua; */
+    height: 300px;
+    width: 400px;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out 0s;
+
+    /* background-color: aliceblue; */
+
+}
+
+.videos:hover{
+    transform:scale(1.05);
+}
+
+
+.thumbnail{
+    width:360px;
+    height: 200px;
+    border-radius: 10px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.duration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:12px;
+    padding: 10px 5px 10px 5px;
+    background-color: rgba(22, 22, 22, 0.75);
+    color: white;
+    margin:0 5px 5px 0;
+    font-size: 0.65rem;
+    border-radius: 5px;
+}
+
+.thumbnail:hover{
+    .duration{
+    visibility: hidden;
+    }
+}
+
+.info{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    width:360px;
+    height: 100px;
+    /* background-color: greenyellow; */
+    /* border-radius: 5px; */
+}
+
+
+.channelicon{
+    display: flex;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.videotitle{
+    margin:4px 0 0 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 550;
+}
+.channelname{
+    display: flex;
+    margin:0px 0 0 50px;
+    text-decoration: none;
+    color: rgb(152, 152, 152);
+    font-size: 0.8rem;
+    /* font-weight: 550; */
+
+}
+/* adding empty space */
+space{
+    width:100px;
+    height: 0px;
+}
+space1{
+    width:340px;
+    height: 0px;
+}
+
+
+.more{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.views{
+    display: flex;
+    margin:3px 0 0 50px;
+    text-decoration: none;
+    color: rgb(152, 152, 152);
+    font-size: 0.8rem;
+}
+
+.timeuploaded{
+    display: flex;
+    margin:3px 0 0 3px;
+    text-decoration: none;
+    color: rgb(152, 152, 152);
+    font-size: 0.8rem;
+
+}
