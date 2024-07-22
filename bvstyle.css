@@ -120,7 +120,7 @@ header{
     /* font-weight:lighter; */
     /* font-style: italic; */
     background-color:white;
-    width: 835px;
+    width:90vw;
     padding: 20px;
     border-radius: 20px;
    
@@ -137,7 +137,7 @@ header{
     height: 500px;
     /* margin-bottom: 50px; */
     width: 885px;
-    background-image: url("rcphoto1.png");
+    background-image: url("bv1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -214,23 +214,23 @@ header{
 #subsec{
     margin-top: 30px;
     display: flex;
-    justify-content:center;
+    justify-content: flex-start;
     align-items: center;
     margin-left: 80px;
     background-color:rgb(233, 244, 253);
-    width: 90vw;
+    width:90vw;
     padding:20px;
     border-radius: 30px;
 }
 
 #photo2{
-    background-image: url("rcphoto2.png");
-    /* margin-top:30px; */
-    height:400px;
+    background-image: url("bv5.png");
+    margin-top:30px;
+    height: 400px;
     /* margin-bottom: 50px; */
-    width:700px;
+    width:100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     border-radius: 30px;
     transition: all 0.3s ease-in-out 0s;
@@ -240,6 +240,31 @@ header{
     transform: scale(102%);
 }
 
+#subsubsec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    /* margin-bottom: 40px; */
+}
+
+.gallphotos{
+    height:180px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size:115%;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out 0s;
+    margin:20px;
+
+}
+
+.gallphotos:hover{
+    transform: scale(102%);
+}
 
 #sec3{
     position: relative;
@@ -395,19 +420,22 @@ header{
     }
 }
 
-/* for Tablets and foldables  */
 
-@media (min-width:601px) and (max-width:1024px){
+
+/* for Mobile devices. */
+
+@media (max-width:600px){
 
     header{
         /* margin:30px 0px 80px 80px; */
         position: relative;
         height:170px;
+        
     }
     #home{
         color:#172a65;
         text-decoration: none;
-        font-size: 2rem;
+        font-size: 1.3rem;
         font-family: Blogh,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-weight: lighter;
         background-color:white;
@@ -415,7 +443,7 @@ header{
         border-radius: 10px;
         z-index: 2;
         position: absolute;
-        margin:140px 0px 40px 80px;
+        margin:90px 0px 40px 30px;
         transition: all 0.1s ease-in-out 0s;
         
     }
@@ -461,30 +489,27 @@ header{
     
     #sec1{
         margin:20px 0 0 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     
     }
     
     #pname{
         color:#172a65;
-        text-align: center;
         font-size: 4rem;
         font-family: Blogh,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-weight: lighter;
-        margin-top: 60px;
+        margin-top: -30px;
+        text-align: center;
     }
     
     #smalldesc{
         color:#172a65;  
         font-family:Bangers;
-        
-        font-size:2rem;
+        text-align: center;
+        font-size:1.3rem;
         /* font-weight:lighter; */
         /* font-style: italic; */
         background-color:white;
-        width: 835px;
+        width:90vw;
         padding: 20px;
         border-radius: 20px;
        
@@ -498,10 +523,10 @@ header{
     
     #photo1{
         margin-top:30px;
-        height: 400px;
+        height: 200px;
         /* margin-bottom: 50px; */
         width: 90vw;
-        background-image: url("rcphoto1.png");
+        background-image: url("bv1.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -558,18 +583,16 @@ header{
     
     #div2{
         background-color: #172A65;
-        border-bottom: solid 10px #172a65;
-         margin-top: 200px;
-         display: flex; 
-         flex-direction: column;
-         align-items: center;
+         margin-top: 85px; 
          /* position: absolute;  */
         /* height:200px; */
         /* display: flex; */
         width: 100%;
         /* height:500px; */
+        text-align: center;
     }
     #gallery{
+        text-align: center;
         padding-top: 40px;
         margin-left: 0px;
         
@@ -580,23 +603,24 @@ header{
     }
     
     #subsec{
-        margin-top: 20px;
+        margin-top: 30px;
         display: flex;
+        flex-direction: column;
         justify-content:center;
         align-items: center;
-        margin-left: 0px;
+        margin-left:0;
         background-color:rgb(233, 244, 253);
-        width: 90vw;
+        width:90vw;
         padding:20px;
         border-radius: 30px;
     }
     
     #photo2{
-        background-image: url("rcphoto2.png");
-        /* margin-top:30px; */
-        height:400px;
+        background-image: url("bv5.png");
+        margin-top:30px;
+        height: 175px;
         /* margin-bottom: 50px; */
-        width:700px;
+        width:100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -605,26 +629,47 @@ header{
     }
     
     #photo2:hover{
+        transform: scale(100%);
+    }
+    
+    #subsubsec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+        /* margin-bottom: 40px; */
+    }
+    
+    .gallphotos{
+        height:175px;
+        width: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-size:115%;
+        border-radius: 30px;
+        transition: all 0.3s ease-in-out 0s;
+        margin:20px;
+    
+    }
+    
+    .gallphotos:hover{
         transform: scale(102%);
     }
     
-    
     #sec3{
         position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         /* margin-top: ; */
         /* margin-top: 300px; */
         
     }
     .emptydiv{
-        top:12px;
-        height:220px;
+        height:120px;
         background-color: #172a65;
     }
     .wave3 {
-        margin-top: 100px;
+        margin-top: 200px;
         position: absolute;
         bottom:0;
         left: 0;
@@ -663,7 +708,7 @@ header{
     #h2{
         /* margin-top: 120px; */
         margin-left: 0px;
-        
+        text-align: center;
         color:#172a65;
         font-size: 4rem;
         font-family: Blogh,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -698,7 +743,7 @@ header{
         color:#172a65;  
         font-family:Bangers;
         /* text-align: center; */
-        font-size:2rem;
+        font-size:1.25rem;
         /* font-weight:lighter; */
         /* font-style: italic; */
         background-color:white;
@@ -716,7 +761,7 @@ header{
         background-color: black;
         color: white;
         padding: 10px;
-        width: 200px;
+        width: 60vw;
         
         border-radius: 10px;
         transition: all 0.1s ease-in-out 0s;
@@ -770,20 +815,20 @@ header{
 }
 
 
+/* for Tablets and foldables */
 
-/* for Mobile devices  */
-
-@media (max-width:600px){
+@media (min-width:601px) and (max-width:1024px){
 
     header{
         /* margin:30px 0px 80px 80px; */
         position: relative;
         height:170px;
+        
     }
     #home{
         color:#172a65;
         text-decoration: none;
-        font-size: 1.3rem;
+        font-size: 2rem;
         font-family: Blogh,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-weight: lighter;
         background-color:white;
@@ -791,7 +836,7 @@ header{
         border-radius: 10px;
         z-index: 2;
         position: absolute;
-        margin:140px 0px 40px 30px;
+        margin:150px 0px 40px 30px;
         transition: all 0.1s ease-in-out 0s;
         
     }
@@ -837,31 +882,27 @@ header{
     
     #sec1{
         margin:20px 0 0 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     
     }
     
     #pname{
         color:#172a65;
-        text-align: center;
         font-size: 4rem;
         font-family: Blogh,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-weight: lighter;
-        margin-top: 60px;
+        margin-top: 80px;
+        text-align: center;
     }
     
     #smalldesc{
-        text-align: center;
         color:#172a65;  
         font-family:Bangers;
-        
-        font-size:1.3rem;
+        text-align: center;
+        font-size:2rem;
         /* font-weight:lighter; */
         /* font-style: italic; */
         background-color:white;
-        width: 90vw;
+        width:90vw;
         padding: 20px;
         border-radius: 20px;
        
@@ -875,12 +916,12 @@ header{
     
     #photo1{
         margin-top:30px;
-        height: 200px;
-        /* margin-bottom: 50px; */
+        height: 400px;
+         margin-bottom: 200px; 
         width: 90vw;
-        background-image: url("rcphoto1.png");
+        background-image: url("bv1.png");
         background-repeat: no-repeat;
-        background-size: 110%;
+        background-size: cover;
         background-position: center;
         border-radius: 30px;
         transition: all 0.3s ease-in-out 0s;
@@ -898,7 +939,7 @@ header{
     .wave2 {
         position: absolute;
         
-        /* bottom: -200px; */
+        bottom: 1260px;
         left: 0;
         width: 100%;
         overflow: hidden;
@@ -935,18 +976,16 @@ header{
     
     #div2{
         background-color: #172A65;
-        border-bottom: solid 10px #172a65;
-         margin-top: 85px;
-         display: flex; 
-         flex-direction: column;
-         align-items: center;
+         margin-top: 85px; 
          /* position: absolute;  */
         /* height:200px; */
         /* display: flex; */
         width: 100%;
         /* height:500px; */
+        text-align: center;
     }
     #gallery{
+        text-align: center;
         padding-top: 40px;
         margin-left: 0px;
         
@@ -957,23 +996,24 @@ header{
     }
     
     #subsec{
-        margin-top: 20px;
+        margin-top: 30px;
         display: flex;
+        flex-direction: column;
         justify-content:center;
         align-items: center;
-        margin-left: 0px;
+        margin-left:0;
         background-color:rgb(233, 244, 253);
-        width: 90vw;
+        width:90vw;
         padding:20px;
         border-radius: 30px;
     }
     
     #photo2{
-        background-image: url("rcphoto2.png");
-        /* margin-top:30px; */
-        height:200px;
+        background-image: url("bv5.png");
+        margin-top:30px;
+        height: 400px;
         /* margin-bottom: 50px; */
-        width:90vw;
+        width:100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -985,23 +1025,44 @@ header{
         transform: scale(102%);
     }
     
+    #subsubsec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center
+        /* margin-bottom: 40px; */
+    }
+    
+    .gallphotos{
+        height:175px;
+        width: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-size:115%;
+        border-radius: 30px;
+        transition: all 0.3s ease-in-out 0s;
+        margin:20px;
+    
+    }
+    
+    .gallphotos:hover{
+        transform: scale(102%);
+    }
     
     #sec3{
         position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         /* margin-top: ; */
         /* margin-top: 300px; */
         
     }
     .emptydiv{
-        top:12px;
         height:220px;
         background-color: #172a65;
     }
     .wave3 {
-        margin-top: 100px;
+        margin-top: 200px;
         position: absolute;
         bottom:0;
         left: 0;
@@ -1039,6 +1100,8 @@ header{
     
     #h2{
         /* margin-top: 120px; */
+        background-color: #ccfa28;
+        border-top:solid 3px #ccfa28;
         margin-left: 0px;
         text-align: center;
         color:#172a65;
@@ -1075,11 +1138,11 @@ header{
         color:#172a65;  
         font-family:Bangers;
         /* text-align: center; */
-        font-size:1.3rem;
+        font-size:2rem;
         /* font-weight:lighter; */
         /* font-style: italic; */
         background-color:white;
-        width:200px;
+        width:90vw;
         padding: 20px;
         border-radius: 20px;
        

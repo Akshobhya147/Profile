@@ -7,6 +7,7 @@
 
 html{
     scroll-behavior: smooth;
+    user-select: none
 }
 @font-face{
     font-family: Blogh;
@@ -397,7 +398,7 @@ hr{
 
 .coverimage{
     
-    height:200px;
+    height:250px;
     width:400px;
     
     background-position: center;
@@ -961,7 +962,7 @@ transform:scale(105%);
         font-family: Blogh,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-weight: lighter;
         margin-left: 0px;
-        padding-top:100px;
+        padding-top:120px;
         text-align: center;
         
         
@@ -987,7 +988,7 @@ transform:scale(105%);
     
     .coverimage{
         
-        height:200px;
+        height:210px;
         width:300px;
         
         background-position: center;

@@ -6,6 +6,7 @@
 
 html{
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 
@@ -244,7 +245,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    align-content: ce
+    align-content: center;
     /* margin-bottom: 40px; */
 }
 
@@ -636,7 +637,7 @@ header{
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        align-content: ce
+        align-content: center;
         /* margin-bottom: 40px; */
     }
     
@@ -1029,7 +1030,7 @@ header{
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        align-content: ce
+        align-content: center;
         /* margin-bottom: 40px; */
     }
     
